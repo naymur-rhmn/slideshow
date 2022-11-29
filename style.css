@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.slideshow-container {
+  background-color: aqua;
+  height: 100vh;
+}
+
+.slideshow-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.slideshow-item {
+  text-align: center;
+  font-size: 66px;
+  font-weight: 600;
+  color: tomato;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.5s;
+}
+
+.slideshow-item.current {
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 0.5s;
+}
